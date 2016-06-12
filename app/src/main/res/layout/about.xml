@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/portraitRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_margin"
+    android:paddingBottom="@dimen/activity_margin"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    >
+
+    <!-- Logo Spacer -->
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:orientation="vertical"
+            >
+		    <TextView
+		        android:id="@+id/labVersionTitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:text="Version"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/labVersionNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:text="1.0.0"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/textHydrantNumberValue"
+		        android:layout_marginTop="20dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:text="Signal Strength"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		    
+		    <TextView
+		        android:id="@+id/txtSignalStrength"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:text="0"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+	    </LinearLayout>
+	    
+	</ScrollView>
+    
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Close"
+        android:width="150dp"
+        />
+
+</LinearLayout>

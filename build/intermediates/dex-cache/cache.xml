@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Sam\.gradle\caches\modules-2\files-2.1\javax.activation\activation\1.1\e6cb541461c2834bdea3eb920f1884d1eb508b50\activation-1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e6cb541461c2834bdea3eb920f1884d1eb508b50">
+        <dex dex="C:\Projects\StudioProjects\jobtrackermobile\app\build\intermediates\pre-dexed\debug\activation-1.1-7b0555d96f95c96cd0f85945f270a3864f9f8513.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sam\.gradle\caches\modules-2\files-2.1\javax.mail\javax.mail-api\1.5.3\14bd962426927d1d34f33fb01308d7ab13168bb1\javax.mail-api-1.5.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="14bd962426927d1d34f33fb01308d7ab13168bb1">
+        <dex dex="C:\Projects\StudioProjects\jobtrackermobile\app\build\intermediates\pre-dexed\debug\javax.mail-api-1.5.3-f32b1095beceeae4a388af433e2b1b4e7cc32f4c.jar" />
+    </item>
+
+</items>

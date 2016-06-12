@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/labDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labDate"
+        android:layout_alignBottom="@+id/labDate"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/labDate"
+        android:text="@string/mybirthday"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/butCalendarx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDate"
+        android:layout_alignBottom="@+id/txtDate"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/txtDate"
+        android:text="@string/calendartext" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDate"
+        android:layout_below="@+id/butCalendarx"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinnerType"
+        android:layout_alignBottom="@+id/spinnerType"
+        android:layout_alignLeft="@+id/labDate"
+        android:text="@string/type"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtType"
+        android:layout_below="@+id/spinnerType"
+        android:layout_marginTop="21dp"
+        android:text="@string/starttime"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labStartTime"
+        android:layout_alignBottom="@+id/labStartTime"
+        android:layout_alignLeft="@+id/spinnerType"
+        android:text="10:00"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/butStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtStartTime"
+        android:layout_alignBottom="@+id/txtStartTime"
+        android:layout_alignRight="@+id/butCalendarx"
+        android:text="@string/setstarttime" />
+
+    <TextView
+        android:id="@+id/labEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labStartTime"
+        android:layout_below="@+id/butStartTime"
+        android:layout_marginTop="42dp"
+        android:text="@string/endtime"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labEndTime"
+        android:layout_alignBottom="@+id/labEndTime"
+        android:layout_alignLeft="@+id/txtStartTime"
+        android:text="10:30"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/butEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtEndTime"
+        android:layout_alignBottom="@+id/txtEndTime"
+        android:layout_alignRight="@+id/butStartTime"
+        android:text="@string/setendtime" />
+
+    <EditText
+        android:id="@+id/txtValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtEndTime"
+        android:layout_below="@+id/butEndTime"
+        android:layout_marginTop="18dp"
+        android:inputType="numberDecimal"
+        android:text="45.00"
+        android:width="100dp" />
+
+    <TextView
+        android:id="@+id/labValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtValue"
+        android:layout_alignBottom="@+id/txtValue"
+        android:layout_alignLeft="@+id/labEndTime"
+        android:text="Value:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_below="@+id/labValue"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:weightSum="1" 
+        >
+        
+    <Button
+        android:id="@+id/butSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:layout_gravity="center_horizontal"
+        android:text="Save" />
+    
+    <Button
+        android:id="@+id/butExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".4"
+        android:layout_gravity="center_horizontal"
+        android:text="Exit" />
+    
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

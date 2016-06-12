@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.uk.sbsystems.android.jobtrackermobile"
+    android:versionCode="64"
+    android:versionName="1.0.64" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="10" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:name="co.uk.sbsystems.android.jobtrackermobile.JTApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/marketname" >
+        <activity
+            android:name="co.uk.sbsystems.android.jobtrackermobile.MainActivity"
+            android:label="@string/marketname" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.activity2" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.Signature" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.Sketch" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.NetworkSettings" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.SearchJobs" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.AssignEngineer" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.LogTimes" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.EditLogTimes" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.CaptureSignature" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.CaptureSketch" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.PaperWork" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.ListPartsRequired" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.EditPartsRequired" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.ListPartsUsed" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.EditPartsUsed" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.ListPayments" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.EditPayments" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.About" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.EditSettings" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.ClearCache" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.ListFireHydrants" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.EditFireHydrant" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.ListRiserServices" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.EditRiserService" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.CapturePumpSignature" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.C_Photos" />
+        <activity android:name="co.uk.sbsystems.android.jobtrackermobile.Custom_Camera" />
+    </application>
+
+</manifest>

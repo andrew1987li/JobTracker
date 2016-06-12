@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/widget54"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" 
+	android:focusable="true"
+  	android:focusableInTouchMode="true" xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<RelativeLayout 
+	    android:id="@+id/relativeLayout1" 
+	    android:layout_height="wrap_content" 
+	    android:background="#063d68" 
+	    android:layout_width="fill_parent"
+	    >
+
+
+	    
+	    <!--  Client Details -->
+	    
+		<TextView android:textSize="14sp" 
+			android:id="@+id/Label1" 
+			android:singleLine="true" 
+			 
+			android:layout_height="wrap_content" 
+			android:textStyle="bold" 
+			android:layout_width="wrap_content" 
+			android:layout_marginTop="20dp" 
+			android:layout_marginLeft="5dp" 
+			android:text="Job No:">
+		    
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/txtJobNo"
+		    android:layout_width="100dp"
+		    android:layout_height="30dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="12dp"
+		    android:layout_toRightOf="@+id/Label1"
+		    android:background="#ffff87"
+		    android:hint="Job Number"
+		    android:inputType="text"
+		    android:maxLines="1"
+		    android:paddingLeft="5dp"
+		    android:textSize="14sp" >
+
+		</EditText>
+		
+		<Button android:text="Load Job" 
+			android:layout_height="50dp" 
+			android:layout_width="wrap_content" 
+			android:layout_marginTop="5dp" 
+			android:layout_toRightOf="@+id/txtJobNo" 
+			android:textSize="14sp"
+			android:id="@+id/btnGetJob" android:focusable="false" android:focusableInTouchMode="false">
+		</Button>
+		
+		
+		
+		<ImageButton
+        android:id="@+id/btnConnect" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" 
+		
+        android:background="@null"
+        android:contentDescription="Image showing network connection"
+        android:src="@drawable/disconnected"
+        />
+		
+		
+		<TextView
+		    android:id="@+id/labTimeOnSite"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/Label3"
+		    android:layout_below="@+id/btnGetJob"
+		    android:text="Time On Site: "
+		    android:textColor="@color/Yellow"
+		    android:textSize="16sp"
+		    android:background="@color/Blue"
+		    android:textStyle="bold" />
+				
+		<TextView
+		    android:id="@+id/txtTimeOneSite"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignTop="@+id/labTimeOnSite"
+		    android:layout_marginLeft="5dp"
+		    android:layout_toRightOf="@+id/labTimeOnSite"
+		    android:textStyle="bold"
+		    android:lines="1"
+		    android:singleLine="false"
+		    android:text="4 Hour"
+		    android:textColor="@color/Yellow"
+		    android:textSize="16sp"
+		    android:background="@color/Blue">
+
+		</TextView>
+				
+		
+		<TextView android:textSize="14sp" 
+			android:id="@+id/Label3" 
+			android:layout_alignParentLeft="true" 
+			android:layout_below="@+id/labTimeOnSite" 
+			android:layout_height="wrap_content" 
+			android:textStyle="bold" 
+			android:layout_width="wrap_content" 
+			android:layout_marginTop="5dp" 
+			android:layout_marginLeft="5dp" 
+			android:text="Client Name: ">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+			android:id="@+id/txtClientName" 
+			android:singleLine="false"
+			android:lines="1" 
+			android:layout_alignTop="@+id/Label3" 
+			android:layout_height="wrap_content" 
+			android:textStyle="normal" 
+			android:layout_width="270dp" 
+			android:layout_toRightOf="@+id/Label3" 
+			android:layout_marginLeft="20dp" 
+			android:text="Essex &amp; Suffolk County Council Ltd" android:focusable="true" android:focusableInTouchMode="true">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+			android:id="@+id/Label8" 
+			android:singleLine="true" 
+			android:layout_below="@+id/txtClientName" 
+			android:layout_height="wrap_content"
+			android:textStyle="bold" 
+			android:layout_width="wrap_content" 
+			android:layout_marginTop="5dp" 
+			android:layout_marginLeft="5dp" 
+			android:text="Client Contact: ">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/txtClientContact" 
+		    android:singleLine="true" 
+		    android:layout_alignLeft="@+id/txtClientName" 
+		    android:layout_alignTop="@+id/Label8" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="normal" 
+		    android:layout_width="wrap_content" 
+		    android:text="Sam Sherwin">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/Label9" 
+		    android:singleLine="true" 
+		    android:layout_below="@+id/Label8" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Client Tel: ">
+		</TextView>
+		
+		<TextView
+		    android:id="@+id/txtClientTel"
+		    android:layout_width="250dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/txtClientName"
+		    android:layout_alignTop="@+id/Label9"
+		    android:layout_toRightOf="@+id/Label8"
+		    android:onClick="onClick"
+		    android:clickable="true"
+		    android:singleLine="true"
+		    android:text="01255 830113"
+		    android:textSize="14sp"
+		    android:textStyle="normal" >
+		    
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/Label10" 
+		    android:singleLine="true" 
+		    android:layout_below="@+id/txtClientTel"
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold"
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp"
+			android:text="Client Email: ">
+		</TextView>
+		
+		<TextView
+		    android:id="@+id/txtClientEmail"
+		    android:layout_width="250dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/Label10"
+		    android:layout_alignLeft="@+id/txtClientTel"
+		    android:onClick="onClick"
+		    android:clickable="true"
+		    android:singleLine="true"
+		    android:text="sam@sbsystems.co.uk"
+		    android:textSize="14sp"
+		    android:textStyle="normal" >
+		    
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/Label11" 
+		    android:singleLine="true" 
+		    android:layout_below="@+id/txtClientEmail" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Serial: ">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/txtJobDetails2" 
+		    android:layout_alignLeft="@+id/txtClientEmail" 
+		    android:singleLine="true" 
+		    android:layout_alignBottom="@+id/Label11" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="normal" 
+		    android:layout_width="250dp" 
+		    android:text="NR5543-7">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/Label17" 
+		    android:singleLine="true" 
+		    android:layout_below="@+id/txtJobDetails2" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Order No: ">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/txtJobDetails0" 
+		    android:layout_alignLeft="@+id/txtJobDetails2" 
+		    android:singleLine="true" 
+		    android:layout_alignBottom="@+id/Label17" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="normal"
+		    android:layout_width="250dp" 
+		    android:text="sbs227">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/Label18" 
+		    android:singleLine="true" 
+		    android:layout_below="@+id/txtJobDetails0" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Customer Ref: ">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/txtJobDetails1" 
+		    android:layout_alignLeft="@+id/txtJobDetails0" 
+		    android:singleLine="true" 
+		    android:layout_alignBottom="@+id/Label18" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="normal" 
+		    android:layout_width="250dp" 
+		    android:text="cust1234"></TextView>
+		
+		<TextView
+		    android:id="@+id/Label5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/txtJobDetails1"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="5dp"
+		    android:singleLine="true"
+		    android:text="Target Date: "
+		    android:textColor="@color/White"
+		    android:textSize="16sp"
+		    android:textStyle="bold" >
+
+</TextView>
+		
+		<TextView
+		    android:id="@+id/txtJobDate3"
+		    android:layout_width="250dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/Label5"
+		    android:layout_alignLeft="@+id/txtJobDetails1"
+		    android:layout_toRightOf="@+id/Label5"
+		    android:singleLine="true"
+		    android:text="27/06/2011"
+		    android:textColor="@color/White"
+		    android:textSize="16sp"
+		    android:textStyle="normal|bold" >
+
+		</TextView>
+		
+		<!--  SITE DETAILS  -->
+		
+
+		<TextView android:textSize="16sp" 
+		    android:id="@+id/Label16" 
+		    android:layout_below="@+id/Label5" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="25dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Site Name: ">
+		</TextView>
+
+		<TextView android:textSize="16sp" 
+		    android:id="@+id/txtCustContact0" 
+		    android:layout_alignLeft="@+id/txtJobDetails1" 
+		    android:singleLine="true" 
+		    android:layout_alignBottom="@+id/Label16" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="normal" 
+		    android:layout_width="250dp" 
+		    android:text="Sherwin Business Systems Ltd">
+		</TextView>
+				
+		<TextView android:textSize="16sp" 
+		    android:id="@+id/Label7" 
+		    android:layout_below="@+id/Label16" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Site Address: ">
+		</TextView>
+		
+		<TextView android:textSize="16sp" 
+		    android:id="@+id/txtCustContact1" 
+		    android:layout_alignTop="@+id/Label7" 
+		    android:layout_alignLeft="@+id/txtJobDetails1" 
+		    android:textStyle="normal" 
+		    android:singleLine="false" 
+		    android:lines="5"
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent" 
+		    android:text="Unit 16, 1 - 2 Davy Road\nClacton On Sea\nEssex">
+		</TextView>
+		
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/Label19" 
+		    android:layout_below="@+id/txtCustContact1" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Post Code: ">
+		</TextView>
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/txtCustContact11" 
+		    android:singleLine="true" 
+		    android:layout_alignTop="@+id/Label19" 
+		    android:layout_alignLeft="@+id/txtCustContact1" 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:text="CO15 4XD">
+		</TextView>
+		
+
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/Label15" 
+		    android:layout_below="@+id/Label19" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Site Contact: ">
+		</TextView>
+				
+				
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/txtCustContact2" 
+		    android:singleLine="true" 
+		    android:layout_alignTop="@+id/Label15" 
+		    android:layout_alignLeft="@+id/txtCustContact1" 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:text="Mrs Sherwin">
+		</TextView>
+		
+		<TextView
+		    android:id="@+id/Label14"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/Label15"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="5dp"
+		    android:text="Site Tel: "
+		    android:textSize="16sp"
+		    android:textStyle="bold" >
+
+		</TextView>
+				
+		<TextView
+		    android:id="@+id/txtCustContact3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/txtCustContact1"
+		    android:layout_alignTop="@+id/Label14"
+		    android:clickable="true"
+		    android:onClick="onClick"
+		    android:singleLine="true"
+		    android:text="01255 830113"
+		    android:textSize="16sp" >
+			
+		</TextView>
+		
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/Label13" 
+		    android:layout_below="@+id/Label14" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Site Mob: ">
+		</TextView>
+		
+		<TextView
+		    android:id="@+id/txtCustContact4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/txtCustContact1"
+		    android:layout_alignTop="@+id/Label13"
+		    android:clickable="true"
+		    android:onClick="OnClick"
+		    android:singleLine="true"
+		    android:text="07811 465196"
+		    android:textSize="16dp" >
+
+		</TextView>
+		
+		
+		<TextView android:textSize="14sp" 
+		    android:id="@+id/Label12" 
+		    android:layout_below="@+id/Label13" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Site Email: ">
+		</TextView>
+				
+		<TextView
+		    android:id="@+id/txtCustContact6"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/txtCustContact1"
+		    android:layout_alignTop="@+id/Label12"
+		    android:clickable="true"
+		    android:onClick="OnClick"
+		    android:singleLine="true"
+		    android:text="julia@sbsystems.co.uk"
+		    android:textSize="16sp" >
+
+		</TextView>
+		
+		
+		
+		<!--   END OF SITE DETAILS   -->
+				
+		
+				
+		
+		
+		
+		<!--  JOB DETAILS  -->
+		
+		<TextView android:textSize="16sp" 
+		    android:id="@+id/Label4"
+		    android:singleLine="true" 
+		    android:layout_below="@+id/Label12" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="5dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Job Details: ">
+		</TextView>
+		
+		<TextView
+		    android:id="@+id/txtJobDetails11"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/Label4"
+		    android:layout_below="@+id/Label4"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="5dp"
+		    android:background="#bbbbbb"
+		    android:singleLine="false"
+		    android:text="Here is some text to display that is really long and I want to see how this copes with the word wrapping on the system"
+		    android:textColor="#000000"
+		    android:textSize="18sp"
+		    android:textStyle="normal"
+		    android:typeface="normal" >
+
+			</TextView>
+			
+		
+		<!--  END OF JOB DETAILS -->
+		
+		
+		
+		
+		
+		
+		
+				
+		
+		<!--   REST OF JOB DETAILS   -->
+		
+		
+		<!--  COMPLETION DATE  -->
+		
+		<TextView android:textSize="12sp" 
+		    android:id="@+id/Label6" 
+		    android:singleLine="true" 
+		    android:layout_below="@+id/txtJobDetails11" 
+		    android:layout_height="wrap_content" 
+		    android:textStyle="bold" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="25dp" 
+		    android:layout_marginLeft="5dp" 
+		    android:text="Completion Date: ">
+		</TextView>
+		
+		<TextView
+		    android:id="@+id/txtCompletionDate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignTop="@+id/Label6"
+		    android:layout_marginTop="-2dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_toRightOf="@+id/Label6"
+		    android:background="#ffff87"
+		    android:singleLine="true"
+		    android:text="27/06/1969"
+		    android:textColor="#000000"
+		    android:textSize="18sp" >
+
+		</TextView>
+
+		<Button android:text="Calendar" 
+		    android:id="@+id/btnCalendar"
+		    android:layout_alignTop="@+id/Label6"
+		    android:layout_toRightOf="@+id/txtCompletionDate"
+		    android:layout_marginTop="-8dp" 
+		    android:layout_height="40dp" 
+		    android:layout_width="wrap_content" 
+		    android:contentDescription="Button, Calendar">
+		</Button>
+		
+		<!--  END COMPLETION DATE -->
+		
+		<CheckBox android:id="@+id/cbJobCompleted" 
+		    android:text="Job Completed"
+		    android:layout_below="@+id/Label6"
+		    android:layout_height="wrap_content" 
+		    android:layout_width="wrap_content" 
+		    android:contentDescription="Tick Box, Job Completed" android:checked="false">
+		</CheckBox>
+		
+		<CheckBox android:id="@+id/cbEngFinished" 
+		    android:text="Engineer Finished"
+		    android:layout_below="@+id/cbJobCompleted"
+		    android:layout_height="wrap_content" 
+		    android:layout_width="wrap_content" 
+		    android:contentDescription="Tick Box, Engineer Finished" android:checked="false">
+		</CheckBox>
+				
+		
+		<TextView android:textSize="12sp" 
+			android:id="@+id/Label2" 
+			android:singleLine="true" 
+			android:layout_below="@+id/cbEngFinished" 
+			android:layout_height="wrap_content" 
+			android:textStyle="bold" 
+			android:layout_width="wrap_content" 
+			android:layout_marginTop="5dp" 
+			android:layout_marginLeft="5dp" 
+			android:text="Engineers Report: ">
+		</TextView>
+		
+		<EditText
+		    android:id="@+id/txtEngReport"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/Label2"
+		    android:layout_below="@+id/Label2"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_weight=".70"
+		    android:background="#ffff87"
+		    android:gravity="top"
+		    android:hint="Type your engineers report here"
+		    android:lines="10"
+		    android:singleLine="false"
+		    android:text=""
+		    android:textColor="#000000"
+		    android:textSize="18sp"
+		    android:textStyle="normal" android:paddingLeft="5dp">
+		    
+		</EditText>
+		
+		
+		<EditText
+		    android:id="@+id/txtWorksCarriedOut"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/Label2"
+		    android:layout_below="@+id/txtEngReport"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_weight=".70"
+		    android:background="#ffff87"
+		    android:gravity="top"
+		    android:hint="Type the work you carried out in here."
+		    android:lines="10"
+		    android:singleLine="false"
+		    android:text=""
+		    android:textColor="#000000"
+		    android:textSize="18sp"
+		    android:textStyle="normal" android:paddingLeft="5dp">
+		    
+		</EditText>
+				
+
+		<EditText
+		    android:id="@+id/txtCauseOfProblem"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/Label2"
+		    android:layout_below="@+id/txtWorksCarriedOut"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_weight=".70"
+		    android:background="#ffff87"
+		    android:gravity="top"
+		    android:hint="Type the cause of the problem here."
+		    android:lines="10"
+		    android:singleLine="false"
+		    android:text=""
+		    android:textColor="#000000"
+		    android:textSize="18sp"
+		    android:textStyle="normal" android:paddingLeft="5dp">
+		    
+		</EditText>
+				
+		
+		<LinearLayout
+		    android:id="@+id/FirstLinear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="left"
+		    android:weightSum="1.0"
+		    android:layout_marginTop="10dp"
+		    android:layout_below="@+id/txtCauseOfProblem"
+		>
+		
+		
+		
+		<Button 
+			android:id="@+id/butTimes"
+			android:text="Log Time" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight=".5"
+			android:contentDescription="Button, Log time"> 
+		</Button>
+		
+		// Get Signature
+		<Button
+		    android:id="@+id/butSignature"
+		    android:text="Get Signature" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight=".5"
+		 android:contentDescription="Button, Get Signature"/>
+		</LinearLayout>
+
+				
+		
+		<LinearLayout
+		    android:id="@+id/SecondLinear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/FirstLinear"
+		    android:orientation="horizontal"
+		    android:gravity="left"
+		    android:weightSum="1.0"
+		>
+				
+		// Sketch
+		<Button 
+			android:id="@+id/butSketch"
+			android:text="Draw Sketch" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight=".5"
+			android:contentDescription="Button, Draw Sketch"> 
+		</Button>
+		
+		// Parts Required
+		<Button 
+			android:id="@+id/butPartsRequired"
+			android:text="Parts Required" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight=".5"
+			android:contentDescription="Button, Parts Required"> 
+		</Button>
+
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ThirdLinear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/SecondLinear"
+		    android:orientation="horizontal"
+		    android:gravity="left"
+		    android:weightSum="1.0"
+		>
+				
+		// Parts Used
+		<Button 
+			android:id="@+id/butPartsUsed"
+			android:text="Parts Used" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight=".5"
+		android:contentDescription="Button, Parts Used">
+		</Button>
+		
+
+		// Payments
+		<Button 
+			android:id="@+id/butPaymentReceipt"
+			android:text="Payments" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight=".5"
+			android:contentDescription="Button, Payments"> 
+		</Button>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ForthLinear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/ThirdLinear"
+		    android:orientation="horizontal"
+		    android:gravity="center_horizontal"
+		    android:weightSum="1.0"
+		    
+		>
+		
+		// Paperwork
+		<Button 
+			android:id="@+id/butPaperwork"
+			android:text="Paperwork" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight=".5"
+			android:contentDescription="Button, Paperwork"> 
+		</Button>
+		
+		<Button 
+			android:id="@+id/butFireHydrant"
+			android:text="Fire Hydrants" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight=".5"
+			android:contentDescription="Fire Hydrants"> 
+		</Button>
+		
+				
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/FifthLinear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/ForthLinear"
+		    android:orientation="horizontal"
+		    android:gravity="center_horizontal"
+		    android:weightSum="1.0"
+		    
+		>
+		
+		<Button 
+			android:id="@+id/butRiserService"
+			android:text="Riser Service" 
+			android:layout_height="wrap_content" 
+			android:layout_width="0dip" 
+			android:layout_weight=".5"
+			android:contentDescription="Riser Service"> 
+		</Button>
+		
+				
+		</LinearLayout>
+				
+		
+		<LinearLayout
+		    android:id="@+id/Fifth_2Linear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/FifthLinear"
+		    android:orientation="horizontal"
+		    android:gravity="center_horizontal"
+		    android:weightSum="1.0"
+		    
+		>
+
+
+			<Button
+				android:id="@+id/butTakePhoto"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight=".4"
+				android:contentDescription="Photos"
+				android:text="Photos"
+				android:visibility="visible" >
+
+			</Button>
+		</LinearLayout>		
+		
+		
+		<LinearLayout
+		    android:id="@+id/SixthLinear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/Fifth_2Linear"
+		    android:layout_marginTop="20dp"
+		    android:orientation="horizontal"
+		    android:gravity="center_horizontal"
+		    android:weightSum="1.0"
+		    
+		>
+		// Update Job
+		<Button 
+			android:id="@+id/btnUpdateJob"
+			android:text="Update Job" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:layout_weight=".40"
+			android:contentDescription="Button, Update Job"> 
+		</Button>
+
+		<TextView android:textSize="12sp" 
+			android:id="@+id/labBlank" 
+			android:singleLine="true" 
+			android:text="  "
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:layout_weight=".10"
+			>
+		</TextView>
+				
+		<TextView
+		    android:id="@+id/labStatus"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.64"
+		    android:gravity="center"
+		    android:singleLine="true"
+		    android:text="Waiting on server"
+		    android:textSize="12sp"
+		    android:textStyle="bold" >
+
+		</TextView>
+				
+		</LinearLayout>
+
+		
+		<LinearLayout
+		    android:id="@+id/SeventhLinear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/SixthLinear"
+		    android:layout_marginTop="20dp"
+		    android:orientation="horizontal"
+		    android:gravity="center_horizontal"
+		    android:weightSum="1.0"
+		    
+		>
+						
+		
+		<Button 
+			android:id="@+id/btnExit"
+			android:text="Exit" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:layout_weight=".75"
+			android:contentDescription="Exit Job Screen Button"> 
+		</Button>
+		
+		</LinearLayout>
+
+		
+	</RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+<!-- From: file:/C:/Projects/StudioProjects/jobtrackermobile/app/src/main/res/layout/jobscreen_vert.xml -->

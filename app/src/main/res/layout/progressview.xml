@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dip"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downloading"
+        android:id="@+id/downlaodState"
+        android:layout_weight="0.3" />
+
+    <ProgressBar
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/downlaodPro"
+        android:layout_weight="0.5" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/downloadBar"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:max="100" />
+
+</LinearLayout>

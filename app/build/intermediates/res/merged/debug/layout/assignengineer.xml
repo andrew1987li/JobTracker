@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/searchbanner" />
+
+
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_above="@+id/bannerFooter"
+        android:layout_below="@+id/bannerImage"
+        android:cacheColorHint="#0000BB"
+        android:drawSelectorOnTop="true"
+        android:listSelector="#33000000" />
+
+
+
+    <TextView
+        android:id="@+id/labAssignedTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bannerImage"
+        android:layout_marginLeft="10dip"
+        android:contentDescription="@string/nodesc"
+        android:text="@string/assingengeineer_currAssignedTo"
+        android:textColor="@color/lightYellow"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/bannerFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/whitebanner"
+        android:contentDescription="@string/nodesc" />
+
+
+
+
+    <TextView
+        android:id="@+id/labAssignedEngineersName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labAssignedTo"
+        android:layout_below="@+id/labAssignedTo"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/assingengeineer_unassigned"
+        android:textColor="@color/lightYellow"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/butClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/search"
+        android:text="Clear"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/butAssign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:text="@string/assingengeineer_assignEngBut"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/butExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:text="Exit"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout><!-- From: file:/C:/Projects/StudioProjects/jobtrackermobile/app/src/main/res/layout/assignengineer.xml -->

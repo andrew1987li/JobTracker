@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal" 
+    android:layout_height="fill_parent" 
+    android:background="@drawable/background"
+>
+
+
+    <ImageButton
+    	android:id="@+id/btnConnect"
+    	android:src="@drawable/disconnected" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="15px"
+		android:layout_marginRight="15px"
+    	android:background="@null"
+		>
+    </ImageButton>
+    
+	<TextView
+		android:id="@+id/labTick" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="5dp" 
+		android:layout_marginTop="10dp" 
+		android:text="2" 
+		android:visibility="invisible"
+		/>
+
+	<!-- Buttons -->
+  	<ImageButton 
+    	android:id="@+id/butsearchjobs"
+    	android:src="@drawable/vbtn_searchjobs" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_centerHorizontal="true" 
+    	android:layout_centerVertical="true" 
+    	/>
+
+	<ImageButton
+	    android:id="@+id/butloadjob"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/butsearchjobs"
+	    android:layout_marginRight="10dp"
+	    android:layout_toLeftOf="@+id/butsearchjobs"
+	    android:src="@drawable/vbtn_loadjob" />
+
+	<ImageButton
+	    android:id="@+id/butlogoff"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/butsearchjobs"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@+id/butsearchjobs"
+	    android:src="@drawable/vbtn_logoff" />
+    
+</RelativeLayout>
+<!-- From: file:/C:/Projects/StudioProjects/jobtrackermobile/app/src/main/res/layout-land/main.xml -->

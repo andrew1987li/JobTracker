@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/mnuNetWorking" android:title="@string/Networking" ></item>
+        <item android:id="@+id/mnuConnect" android:title="@string/Connect" ></item>
+        <item android:id="@+id/mnuDisconnect" android:title="@string/Disconnect" ></item>
+        <item android:id="@+id/mnuAbout" android:title="@string/About" ></item>
+        <item android:id="@+id/mnuAssignEng" android:title="@string/AssignEngineer" ></item>
+        <item android:id="@+id/mnuRefreshLabs" android:title="@string/RefreshLabels" ></item>
+        <item android:id="@+id/mnuSettings" android:title="@string/Settings" ></item>
+        <item android:id="@+id/mnuClearCache" android:title="@string/ClearCache"></item>
+        <item android:id="@+id/mnuRefreshEngs" android:title="@string/RefreshEngineers"></item>
+        <item android:id="@+id/mnuSendDatabase" android:title="@string/SendDatabase"></item>
+</menu>

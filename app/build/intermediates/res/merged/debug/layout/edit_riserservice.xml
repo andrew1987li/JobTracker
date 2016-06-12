@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <!-- ********************************* -->
+    <!-- THIS IS THE START OF THE 1ST GRID -->
+    <!-- ESTERNAL EQUIPMENT -->
+    <!-- ********************************* -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#063d68" >
+
+        <Spinner
+            android:id="@+id/spinLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <!-- Riser Number / Riser Location -->
+
+        <TextView
+            android:id="@+id/labRiserNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinLocation"
+            android:text="Riser No:"
+            android:textColor="@color/White"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/labRiserLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/labRiserNo"
+            android:layout_below="@+id/spinLocation"
+            android:text="Riser Location:"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/White"
+            android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/editRiserNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/labRiserNo"
+            android:layout_below="@+id/labRiserNo"
+            android:inputType="number" />
+        
+        <EditText
+            android:id="@+id/editRiserLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/labRiserLocation"
+            android:layout_alignRight="@+id/labStatus"
+            android:layout_below="@+id/labRiserNo"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/labExtEquipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editRiserNo"
+            android:layout_marginTop="10dp"
+            android:text="EXTERNAL EQUIPMENT"
+            android:textColor="@color/White"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/labInletKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labExtEquipment"
+            android:layout_marginTop="10dp"
+            android:text="Inlet Key" />
+        
+		<EditText
+                android:id="@+id/editExtInletKey"
+				android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labInletKey"
+                android:inputType="text">
+                <requestFocus />           
+                 </EditText>        
+        
+        
+        <TextView
+            android:id="@+id/labExt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editExtInletKey"
+            android:text="@string/inletcabinet" />
+        
+
+        
+        <TextView
+            android:id="@+id/labService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labExt1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:text="S/C" />
+
+        <TextView
+            android:id="@+id/labStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labExt1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="Status" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labExt1"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/editExtDetails1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="64"
+                android:ems="10"
+                android:inputType="text" >
+                
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtExtServiceCheck1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/spacer1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtExtStatus1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="19"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row1"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/labExt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inlet Glass" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row2_title"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/editExtDetails2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="64"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/txtExtServiceCheck2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/spacer2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtExtStatus2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="19"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row2"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/labExt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inlet Sign" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row3_title"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/editExtDetails3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="64"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/txtExtServiceCheck3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/spacer3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtExtStatus3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="19"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row3"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/labExt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inlet Breeching" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row4_title"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/editExtDetails4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="64"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/txtExtServiceCheck4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/spacer4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtExtStatus4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="19"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row5_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row4"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/labExt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valve Cap" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row5_title"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/editExtDetails5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="64"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/txtExtServiceCheck5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/spacer5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtExtStatus5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="19"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row6_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row5"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/labExt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drain Valve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row6_title"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/editExtDetails6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="64"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/txtExtServiceCheck6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/spacer6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtExtStatus6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="19"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+        </LinearLayout>
+
+        <!-- ********************************* -->
+        <!-- THIS IS THE START OF THE 2ND GRID -->
+        <!-- INTERNAL EQUIPMENT -->
+        <!-- ********************************* -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row6"
+            android:layout_marginTop="1dp"
+            android:background="#063d68" >
+
+            <TextView
+                android:id="@+id/labIntEquipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INTERNAL EQUIPMENT"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labOutletKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labIntEquipment"
+            android:layout_marginTop="10dp"
+            android:text="Outlet Key" />
+        
+		<EditText
+                android:id="@+id/editExtOutletKey"
+				android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labOutletKey"
+                android:inputType="text" >           
+                 </EditText>        
+            
+            <TextView
+                android:id="@+id/labInt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editExtOutletKey"
+                android:text="Outlet Valve (quantity) / Details" />
+
+            <TextView
+                android:id="@+id/labService2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labInt1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="SC" />
+
+            <LinearLayout
+                android:id="@+id/introw1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labInt1"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <EditText
+                    android:id="@+id/editIntDetails1"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/editIntDetailsValue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:width="100dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introw2_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/introw1"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/labExt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instantaneous Washer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introw2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/introw2_title"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <EditText
+                    android:id="@+id/editIntDetails2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtIntServiceCheck2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:background="@color/Locked"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    android:textColor="@color/Black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introw3_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/introw2"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/labExt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outlet Plug" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introw3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/introw3_title"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <EditText
+                    android:id="@+id/editIntDetails3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtIntServiceCheck3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:background="@color/Locked"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    android:textColor="@color/Black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introw4_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/introw3"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/labExt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Padlock / Strap" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introw4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/introw4_title"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <EditText
+                    android:id="@+id/editIntDetails4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtIntServiceCheck4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:background="@color/Locked"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    android:textColor="@color/Black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introw5_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/introw4"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/labExt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Air Release Valve" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/introw5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/introw5_title"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <EditText
+                    android:id="@+id/editIntDetails5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtIntServiceCheck5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:background="@color/Locked"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    android:textColor="@color/Black" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- ************************************ -->
+        <!-- THIS IS THE START OF THE 3RD SECTION -->
+        <!-- PRESSURE TEST DETAILS -->
+        <!-- ************************************ -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginTop="1dp"
+            android:background="#063d68" >
+
+            <TextView
+                android:id="@+id/labPressTestDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRESSURE TEST DETAILS"
+                android:textColor="@color/White"
+                android:layout_marginBottom="2dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/labAir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTestDetails"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100dp"
+                android:text="Air" />
+
+            <TextView
+                android:id="@+id/labWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTestDetails"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="Water" />
+
+            <TextView
+                android:id="@+id/labPressTest1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labPressTestDetails"
+                android:layout_marginTop="15dp"
+                android:text="Inlet Pressure (Bar)" />
+
+            <EditText
+                android:id="@+id/editAir1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTest1"
+                android:layout_alignLeft="@+id/labAir"
+                android:layout_marginLeft="-20dp"
+                android:inputType="number|numberSigned|numberDecimal" />
+
+            <EditText
+                android:id="@+id/editWater1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTest1"
+                android:layout_alignLeft="@+id/labWater"
+                android:layout_marginLeft="-10dp"
+                android:inputType="number|numberSigned|numberDecimal" />
+
+            <TextView
+                android:id="@+id/labPressTest2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labPressTest1"
+                android:layout_marginTop="30dp"
+                android:text="Top Valve Pressure (Bar)" />
+
+            <EditText
+                android:id="@+id/editAir2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTest2"
+                android:layout_alignLeft="@+id/labAir"
+                android:layout_marginLeft="-20dp"
+                android:inputType="number|numberSigned|numberDecimal" />
+
+            <EditText
+                android:id="@+id/editWater2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTest2"
+                android:layout_alignLeft="@+id/labWater"
+                android:layout_marginLeft="-10dp"
+                android:inputType="number|numberSigned|numberDecimal" />
+        </RelativeLayout>
+
+        <!-- ************************************ -->
+        <!-- THIS IS THE START OF THE 4th SECTION -->
+        <!-- COMPLETION CHECKED -->
+        <!-- ************************************ -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginTop="20dp"
+            android:background="#063d68" >
+
+            <TextView
+                android:id="@+id/labPressTestDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPLETION CHECKED"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/labYesNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTestDetails"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="Yes / No" />
+
+            <TextView
+                android:id="@+id/labPressTest1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labPressTestDetails"
+                android:layout_marginTop="15dp"
+                android:text="Service Label Fitted:" />
+
+            <TextView
+                android:id="@+id/txtCompCheck1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTest1"
+                android:layout_alignLeft="@+id/labYesNo"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/labPressTest2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labPressTest1"
+                android:layout_marginTop="25dp"
+                android:text="Cabinet Sticker Fitted:" />
+
+            <TextView
+                android:id="@+id/txtCompCheck2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTest2"
+                android:layout_alignLeft="@+id/labYesNo"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/labPressTest3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labPressTest2"
+                android:layout_marginTop="25dp"
+                android:text="System Drained &amp; Secure:" />
+
+            <TextView
+                android:id="@+id/txtCompCheck3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/labPressTest3"
+                android:layout_alignLeft="@+id/labYesNo"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:textColor="@color/Black" />
+        </RelativeLayout>
+
+        <!-- ************************************ -->
+        <!-- THIS IS THE START OF THE 5th SECTION -->
+        <!-- COMMENTS & REMEDIAL WORKS -->
+        <!-- ************************************ -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_marginTop="20dp"
+            android:background="#063d68" >
+
+            <TextView
+                android:id="@+id/labPressTestDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMMENTS"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/labRemedialWorkTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtComments"
+                android:text="REMEDIAL WORK CARRIED OUT:"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/labOverAllStatusTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtRemedialWorks"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="OVERALL STATUS:"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtOverAllStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/labOverAllStatusTitle"
+                android:layout_below="@+id/labOverAllStatusTitle"
+                android:layout_marginLeft="50dp"
+                android:background="@color/Locked"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="220dp"
+                android:padding="10dp"
+                android:textColor="@color/Black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnGetPumpSig"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtOverAllStatus"
+                android:layout_marginTop="10dp"
+                android:contentDescription="Collect Pump Signature"
+                android:text="Collect Pump Signature" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnGetStackSig"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnGetPumpSig"
+                android:layout_marginTop="10dp"
+                android:contentDescription="Collect Stack Signature"
+                android:text="Collect Stack Signature" >
+            </Button>
+            
+            <Button
+                android:id="@+id/btnGetCustSig"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnGetStackSig"
+                android:layout_marginTop="10dp"
+                android:contentDescription="Collect Customer Signature"
+                android:text="Collect Customer  Signature" >
+            </Button>
+            
+
+            <EditText
+                android:id="@+id/txtComments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/labPressTestDetails"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="Enter your comments here"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="15"
+                android:minLines="5"
+                android:paddingLeft="5dp"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/txtRemedialWorks"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/labRemedialWorkTitle"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="Enter your remedial work details here"
+                android:inputType="text|textMultiLine"
+                android:maxLines="15"
+                android:minLines="5"
+                android:paddingLeft="5dp"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomSection"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/relativeLayout5"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="75"
+                android:contentDescription="Save Details"
+                android:text="Save" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="25"
+                android:contentDescription="Exit Form"
+                android:text="Exit" >
+            </Button>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView><!-- From: file:/C:/Projects/StudioProjects/jobtrackermobile/app/src/main/res/layout/edit_riserservice.xml -->

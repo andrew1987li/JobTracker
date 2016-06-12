@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background ="#ffffff" 
+    >
+
+    <TextView
+        android:id="@+id/labJobNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:textStyle="bold"
+        android:text="    Job No: "
+    	android:textColor="#777777"
+    />
+    
+    <TextView
+        android:id="@+id/txtJobNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:textStyle="bold"
+        android:text="@+id/txtJobNo"
+        android:layout_toRightOf="@+id/labJobNo"
+        android:layout_alignTop="@+id/labJobNo"
+    	android:textColor="#000000" 
+    />
+    
+
+    <TextView
+        android:id="@+id/labClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="Client: "
+        android:layout_below="@+id/labJobNo"
+        android:layout_alignRight="@+id/labJobNo"
+    	android:textColor="#777777"
+    />
+    
+    <TextView
+        android:id="@+id/txtClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="@+id/txtJobNo"
+        android:layout_alignLeft="@+id/txtJobNo"
+        android:layout_alignTop="@+id/labClient"
+        android:layout_marginRight="45px"
+    	android:textColor="#000000" 
+    />
+
+
+    <TextView
+        android:id="@+id/labSiteAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="Site: "
+        android:layout_below="@+id/labClient"
+        android:layout_alignRight="@+id/labClient"
+    	android:textColor="#777777"
+    />
+    
+    <TextView
+        android:id="@+id/txtSiteAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="@+id/txtSiteAddress"
+        android:layout_alignLeft="@+id/txtJobNo"
+        android:layout_alignTop="@+id/labSiteAddress"
+        android:layout_marginRight="45px"
+    	android:textColor="#000000" 
+    />
+    
+    <TextView
+        android:id="@+id/labPCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="P Code: "
+        android:layout_below="@+id/txtSiteAddress"
+        android:layout_alignRight="@+id/labSiteAddress"
+    	android:textColor="#777777"
+    />
+    
+    <TextView
+        android:id="@+id/txtPCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="@+id/txtPCode"
+        android:layout_alignLeft="@+id/txtSiteAddress"
+        android:layout_alignTop="@+id/labPCode"
+        android:layout_marginRight="45px"
+    	android:textColor="#000000" 
+    />
+    
+
+    <TextView
+        android:id="@+id/labDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="Due Date: "
+        android:layout_below="@+id/txtPCode"
+        android:layout_alignRight="@+id/labPCode"
+    	android:textColor="#777777"
+    />
+    
+    <TextView
+        android:id="@+id/txtDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="@+id/txtDueDate"
+        android:layout_alignLeft="@+id/txtPCode"
+        android:layout_alignTop="@+id/labDueDate"
+    	android:textColor="#000000" 
+    />
+    
+    <TextView
+        android:id="@+id/labTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="Tel: "
+        android:layout_below="@+id/txtDueDate"
+        android:layout_alignRight="@+id/labDueDate"
+    	android:textColor="#777777"
+    />
+    
+    <TextView
+        android:id="@+id/txtTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" 
+        android:text="@+id/txtTelephone"
+        android:layout_alignLeft="@+id/txtDueDate"
+        android:layout_alignTop="@+id/labTelephone"
+    	android:textColor="#000000" 
+    />
+    
+
+  	<ImageView 
+  		android:id="@+id/imgCallTel"
+  		android:layout_width="25dip"
+  		android:layout_height="25dip"
+  		android:layout_marginTop="10dip"
+  		android:layout_marginRight="10dip"
+  		android:layout_alignParentTop="true"
+  		android:layout_alignParentRight="true"
+  		
+  		/>
+  		
+  	<ImageView 
+  		android:id="@+id/imgSendSMS"
+  		android:layout_width="25dip"
+  		android:layout_height="25dip"
+  		android:layout_marginTop="10dip"
+  		android:layout_marginRight="10dip"
+  		android:layout_below="@+id/imgCallTel"
+  		android:layout_alignParentRight="true"
+  		
+  		/>
+  		
+  
+
+</RelativeLayout>
+<!-- From: file:/C:/Projects/StudioProjects/jobtrackermobile/app/src/main/res/layout/jobsearchrowlayout.xml -->

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="co.uk.sbsystems.android.jobtrackermobile"
+      android:versionCode="64"
+      android:versionName="1.0.64"
+      >
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="16"/>
+    
+        <supports-screens  android:largeScreens="true"   
+            android:normalScreens="true"  
+            android:smallScreens="true" 
+            android:anyDensity="true"/>
+        
+		<uses-permission android:name="android.permission.INTERNET" /> 
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />     
+		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+		<uses-permission android:name="android.permission.CALL_PHONE" />		 
+		<uses-permission android:name="android.permission.SEND_SMS"/>
+        <uses-permission android:name="android.permission.CAMERA"/>
+        
+		
+		<uses-feature android:name="android.hardware.telephony" android:required="false" />
+		<uses-feature android:name="android.hardware.camera" android:required="false" />
+		<uses-feature android:name="android.hardware.camera.front" android:required="false" />
+				
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/marketname" 
+        android:name="co.uk.sbsystems.android.jobtrackermobile.JTApplication"
+        android:allowBackup="false"
+        >
+         
+        <activity android:label="@string/marketname" android:name="MainActivity" >
+         <intent-filter>
+			<action android:name="android.intent.action.MAIN" />
+			<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+            		
+		</activity>
+        
+		
+        <activity android:name="activity2"></activity>
+        <activity android:name="Signature"></activity>
+        <activity android:name="Sketch"></activity>
+        <activity android:name="NetworkSettings"></activity>
+        <activity android:name="SearchJobs"></activity>
+        <activity android:name="AssignEngineer"></activity>
+        <activity android:name="LogTimes"></activity>
+        <activity android:name="EditLogTimes"></activity>
+        <activity android:name="CaptureSignature"></activity>
+        <activity android:name="CaptureSketch"></activity>
+        <activity android:name="PaperWork"></activity>
+        <activity android:name="ListPartsRequired"></activity>
+        <activity android:name="EditPartsRequired"></activity>
+        <activity android:name="ListPartsUsed"></activity>
+        <activity android:name="EditPartsUsed"></activity>
+        <activity android:name="ListPayments"></activity>
+        <activity android:name="EditPayments"></activity>
+        <activity android:name="About"></activity>
+        <activity android:name="EditSettings"></activity>
+        <activity android:name="ClearCache"></activity>
+        <activity android:name="ListFireHydrants"></activity>
+        <activity android:name="EditFireHydrant"></activity>
+        <activity android:name="ListRiserServices"></activity>
+        <activity android:name="EditRiserService"></activity>
+        <activity android:name="CapturePumpSignature"></activity>
+        <activity android:name="C_Photos"></activity>
+        <activity android:name="Custom_Camera"></activity>
+
+
+    </application>
+    
+			
+</manifest>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RL1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+	    android:background="#061d28"
+	>
+
+  	<ImageView 
+  		android:background="@drawable/searchbanner"
+  		android:id="@+id/bannerHeader"
+  		android:layout_width="fill_parent"
+  		android:layout_height="20dp"
+  		android:layout_alignParentTop="true"
+  		android:contentDescription="Non Clickable background banner image light blue gradient."/>		
+        
+        
+		<TextView android:textSize="14sp" 
+			android:id="@+id/labJobNo" 
+			android:singleLine="true" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:text="Job: 1234"
+ 			android:textColor="@color/lightYellow">
+		</TextView>
+		
+		<TextView
+		    android:id="@+id/labSiteAddress"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/labJobNo"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginLeft="20dp"
+		    android:singleLine="true"
+		    android:text="123 The Road, Clacton On Sea, Essex"
+		    android:textColor="@color/lightYellow"
+		    android:textSize="14sp" />
+		
+		<ListView
+		    android:id="@+id/android:list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_above="@+id/bannerFooter"
+		    android:layout_marginTop="25dp"
+		    android:cacheColorHint="#123344"
+		    android:drawSelectorOnTop="true" android:layout_marginBottom="10dp"/>
+		
+  	<ImageView 
+  		android:background="@drawable/searchbanner"
+  		android:id="@+id/bannerFooter"
+  		android:layout_width="fill_parent"
+  		android:layout_height="100dp"
+  		android:layout_alignParentBottom="true"
+  		android:contentDescription="Non Clickable background banner image light blue gradient."/>
+
+  	<LinearLayout 
+  	    android:id="@+id/LL3"
+  	    android:gravity="center_horizontal"
+  	    android:layout_alignTop="@+id/bannerFooter"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="fill_parent"
+  	    android:weightSum="1"
+  	    >
+  	    
+  	<Button
+  	    android:id="@+id/butAdd"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="Add"
+  	    android:layout_weight=".75" 
+  	    android:layout_marginTop="5dp" android:contentDescription="Clickable Button. Add new time, mileage or cost."/>
+  	
+  	</LinearLayout>
+  	
+  	
+	<LinearLayout 
+  	    android:id="@+id/LL3"
+  	    android:layout_alignTop="@+id/bannerFooter"
+  	    android:gravity="center_horizontal"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="fill_parent"
+  	    android:weightSum="1"
+  	    >
+  	
+  	<Button
+  	    android:id="@+id/butExit"
+  	    android:layout_gravity="bottom"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_weight=".7"
+  	    android:text="Exit"
+  	 android:contentDescription="Clickable Button, Exit this screen"/>
+	    	
+ 	</LinearLayout> 		
+	    
+	</RelativeLayout>    
+	
+
+<!-- From: file:/C:/Projects/StudioProjects/jobtrackermobile/app/src/main/res/layout/logtimes.xml -->

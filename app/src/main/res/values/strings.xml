@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">jobtrackermobile</string>
+    <string name="arthor">Sam Sherwin</string>
+    <string name="julia">Julia Sherwin</string>
+    <string name="jobno">Job No:</string>
+    <string name="clientname">Client Name:</string>
+    <string name="sitename">Site Name:</string>
+    <string name="marketname">Job Tracker Mobile</string>
+    <string name="nodesc"></string>
+    <string name="AssignEng">Assign an engineer to this device.</string>
+    
+    <string name="assingengeineer_AvailEngs">Available Engineers.</string>
+    <string name="assingengeineer_currAssignedTo">Currently Assigned To:</string>
+    <string name="assingengeineer_assignEngBut">Assign</string>
+    <string name="assingengeineer_unassigned">Unassigned</string>
+    <string name="welcome">Welcome To Job Tracker Mobile</string>
+    <string name="JobButtonImage">Clickable Jobs button.</string>
+    <string name="search">"Search: "</string>
+    <string name="date">Date:</string>
+    <string name="mybirthday">27/06/1969</string>
+    <string name="starttime">Start Time:</string>
+    <string name="endtime">End Time:</string>
+    <string name="miles">Miles:</string>
+    <string name="mins">Minutes:</string>
+    <string name="cost">Cost £</string>
+    <string name="calendar">Calendar</string>
+    <string name="type">Type:</string>
+    <string name="paperwork">Describe any paperwork you have issued:</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    
+	<string-array name="jobTimeTypes">
+		<item>Call out £</item>
+		<item>Fixed Cost £</item>
+		<item>Travel</item>
+		<item>Mileage</item>
+		<item>Mileage From</item>
+		<item>Mileage To</item>
+		<item>On Site</item>
+		<item>Travel From</item>
+		<item>Travel To</item>
+	</string-array>
+	
+	<string-array name="paymentTypes">
+		<item>Cash</item>
+		<item>Card</item>
+		<item>Cheque</item>
+		<item>BACS</item>
+	</string-array>
+		
+	
+		<string name="setendtime">Set End Time</string>
+		<string name="setstarttime">Set Start Time</string>
+		<string name="calendartext">Calendar</string>    
+		
+    <string name="external_dir">GetSignature</string>    
+		
+    <string name="AvailableCertificates">Available Hydrant Certificates</string>    
+		
+    <string name="hydrantlocation">Hydrant Location:</string>    
+    <string name="hydrantnumber">Hydrant Number:</string>    
+    <string name="riserlocation">Riser Location:</string>    
+    <string name="risernumber">Riser Number:</string>    
+    		
+    <string name="fireHydrants">Available Fire Hydrant Certificates</string>    
+		
+    <string name="textDetail1">1. is the surrounding pavement sound?</string>		
+    <string name="textDetail2">2. is the cover &amp; frame sound?</string>		
+	<string name="textDetail3">3. is the pit structurally sound?</string>		
+	<string name="textDetail4">4. is the pit dry?</string>		
+	<string name="textDetail5">5. is the indicator plate correct?</string>		
+	<string name="textDetail6">6. is the valve packing sound?</string>		
+	<string name="textDetail7">7. is there a cap fitted?</string>		
+	<string name="textDetail8">8. outlet round thread?</string>		
+	<string name="textDetail9">9. is the hydrant in working order?</string>		
+	<string name="textDetail10">10. unable to test &amp; reason:</string>		
+	<string name="textDetail11">11. Static pressure test: (BAR) </string>		
+	<string name="textDetail12">12. Flow rate: Litres/minute</string>
+			
+	<string name="yes">YES</string>		
+	<string name="no">NO</string>		
+	<string name="blank"></string>
+	<string name="notapplicable">NA</string>
+	<string name="good">GOOD</string>
+	<string name="failed">FAILED</string>
+	<string name="pass">PASS</string>
+	<string name="passed">PASSED</string>
+	<string name="fail">FAIL</string>
+					
+	<string name="inletcabinet">Inlet Cabinet:</string>
+	<string name="status">Status:</string>
+	<string name="details">Details:</string>
+		
+	<string name="Networking">Networking</string>
+	<string name="Connect">Connect</string>
+	<string name="Disconnect">Disconnect</string>
+	<string name="About">About</string>
+	<string name="AssignEngineer">Assign Engineer</string>
+	<string name="RefreshLabels">Refresh Labels</string>
+	<string name="Settings">Settings</string>
+	<string name="ClearCache">Clear Cache</string>
+	<string name="RefreshEngineers">Refresh Engineers</string>
+	<string name="SendDatabase">Send Database</string>
+	
+							
+</resources>

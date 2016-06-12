@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:background="#123456">
+
+    <TextView
+        android:id="@+id/labId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:visibility="invisible"
+    />
+    
+    <TextView
+        android:id="@+id/labJTRecordID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:visibility="invisible"
+    />
+    
+    
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Payments Received"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/lightYellow" android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/labAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTitle"
+        android:text="Qty:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/labAmount"
+        android:layout_alignTop="@+id/labAmount"
+        android:layout_marginLeft="70dp"
+        android:text="7.57"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <TextView
+        android:id="@+id/labMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtAmount"
+        android:text="Method:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/txtMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAmount"
+        android:layout_alignTop="@+id/labMethod"
+        android:text="xCash"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+	<TextView
+        android:id="@+id/labReceiptNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtMethod"
+        android:text="Receipt No:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/txtReceiptNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAmount"
+        android:layout_alignTop="@+id/labReceiptNo"
+        android:text="12345"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+	<TextView
+        android:id="@+id/labDateTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtReceiptNo"
+        android:text="Date Taken:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/txtDateTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAmount"
+        android:layout_alignTop="@+id/labDateTaken"
+        android:text="27/06/12"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+	<TextView
+        android:id="@+id/labOfficeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtDateTaken"
+        android:text="Office Date:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/txtOfficeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAmount"
+        android:layout_alignTop="@+id/labOfficeDate"
+        android:text="28/06/12"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    
+    
+
+</RelativeLayout><!-- From: file:/C:/Projects/StudioProjects/jobtrackermobile/app/src/main/res/layout/payments_row.xml -->

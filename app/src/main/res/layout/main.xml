@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/portraitRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:contentDescription="Image showing network connection"
+        android:src="@drawable/disconnected" />
+
+    <TextView
+        android:id="@+id/labTick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="1"
+        android:visibility="invisible" />
+
+    <!-- Buttons -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/butloadjob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/JobButtonImage"
+            android:src="@drawable/vbtn_loadjob" />
+
+        <ImageButton
+            android:id="@+id/butsearchjobs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:contentDescription="Clickable Search Jobs Button."
+            android:src="@drawable/vbtn_searchjobs" />
+
+        <ImageButton
+            android:id="@+id/butlogoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:contentDescription="Clickable Log Off button."
+            android:src="@drawable/vbtn_logoff" />
+    </LinearLayout>
+
+</RelativeLayout>

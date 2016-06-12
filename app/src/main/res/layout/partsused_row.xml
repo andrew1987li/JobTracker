@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:background="#123456">
+
+    <TextView
+        android:id="@+id/labId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:visibility="invisible"
+    />
+    
+    <TextView
+        android:id="@+id/labJTRecordID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:visibility="invisible"
+    />
+    
+    
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/lightYellow" android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/labQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTitle"
+        android:text="Qty:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/labQty"
+        android:layout_alignTop="@+id/labQty"
+        android:layout_marginLeft="70dp"
+        android:text="7"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <TextView
+        android:id="@+id/labDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtLocation"
+        android:text="Desc:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLocation"
+        android:layout_alignTop="@+id/labDesc"
+        android:text="Ceiling Cove"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+	<TextView
+        android:id="@+id/labPtNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtNumber"
+        android:text="Part No:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/txtPtNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLocation"
+        android:layout_alignTop="@+id/labPtNo"
+        android:text="CV1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+    
+	<TextView
+        android:id="@+id/labUnitPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtPtNo"
+        android:text="Unit Price £"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/txtUnitPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLocation"
+        android:layout_alignTop="@+id/labUnitPrice"
+        android:text="0.00"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    
+    
+
+</RelativeLayout>
